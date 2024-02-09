@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.startupideas_tutoralsroadmapsmore">
+
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/app_icon_project_one"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StartupIdeasTutoralsRoadmapsMore"
+        tools:targetApi="31">
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StartActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InjectStringsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DuplicateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EA_ts_1"
+            android:exported="false" />
+        <activity
+            android:name=".EA_ts_3"
+            android:exported="false" />
+        <activity
+            android:name=".EA_ts_4"
+            android:exported="false" />
+        <activity
+            android:name=".ScrollingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HotTopicsFifteenTutorialsArticlesWebView"
+            android:exported="false" />
+        <activity
+            android:name=".TutorialActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CoolsZTOActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LCoolZTOActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LBasicChaptersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BasicChaptersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DiscussionActivity"
+            android:exported="false" /> <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7754746618774272~9774475408" />
+
+        <activity
+            android:name=".activity_navigation_drawer"
+            android:exported="false"
+            android:label="@string/title_activity_navigation_drawer" />
+    </application>
+
+</manifest>
